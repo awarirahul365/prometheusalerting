@@ -12,6 +12,6 @@ route:
 receivers:
   - name: 'teams'
     webhook_configs:
-      - url: "https://sap.webhook.office.com/webhookb2/a95eaf94-175a-4cda-9cfc-2cfab7429d53@42f7676c-f455-423c-82f6-dc2d99791af7/IncomingWebhook/5af61749784a4d2cbb6b315f65dfef7d/d2178c8a-1af0-4e5b-97ff-2815b15ddee0"
+      - url: ""
         send_resolved: true
    
