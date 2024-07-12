@@ -1,0 +1,10 @@
+groups:
+  - name: DemoAlerts
+    rules:
+      - alert: InstanceDown 
+        expr: Used_capacity > 120000
+        for: 1m 
+        labels: 
+          severity: low
+        annotations:
+          summary: 'Alert with low severity'

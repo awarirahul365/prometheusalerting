@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 5m  
+
+rule_files:
+  - alert.yml
+
+scrape_configs:
+  - job_name: "prometheus_test"
+
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: 'sddr-lddr-monitoring'
+    scrape_interval: 5m
+    scrape_timeout: 5m
+    metrics_path: /api/sddrlddr_orchestrator
+    scheme: 'https'
+    static_configs:
+      - targets: ['azpoe-blobnfs-monitor.azurewebsites.net']
